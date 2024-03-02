@@ -40,6 +40,7 @@ const server = new SMTPServer({
             stream.on('end',()=>{
                 console.log('End of message');
                 callback(); // accepting the message
+                // here callback is a function which is used to accept the message
             })
         })
     }
