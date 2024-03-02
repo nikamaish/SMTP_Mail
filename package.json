@@ -1,0 +1,23 @@
+{
+  "name": "smtp_server",
+  "version": "1.0.0",
+  "description": "SMTP stands for Simple Mail Transfer Protocol. It is a standard protocol used in the field of computer networking and the Internet to transfer electronic mail (email) between computers. SMTP is a text-based protocol that works in a client-server model, where an email client (sender) communicates with an email server (receiver).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikamaish/SMTP_Mail.git"
+  },
+  "author": "aish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikamaish/SMTP_Mail/issues"
+  },
+  "homepage": "https://github.com/nikamaish/SMTP_Mail#readme",
+  "dependencies": {
+    "@types/smtp-server": "^3.5.10",
+    "smtp-server": "^3.13.3"
+  }
+}

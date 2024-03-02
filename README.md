@@ -37,3 +37,18 @@ Let me clarify the process:
    - The recipient's server uses the public key to verify the digital signature. If the signature is valid and matches the content of the email, it means that the email was indeed signed by the private key associated with the signing domain.
 
 In summary, the private key is used exclusively by the sender's mail server to create the digital signature. The public key, which is needed for verification, is made publicly available in the DNS. The recipient's mail server uses this public key to confirm that the email's digital signature was created with the private key associated with the sending domain. This process helps ensure the authenticity and integrity of the email message.
+
+- DMARC:
+DMARC provides domain owners with the ability to set policies for handling emails that fail authentication checks, such as marking them as spam or rejecting them outright. Additionally, DMARC includes reporting mechanisms to provide feedback on email authentication activities.
+
+3 Response to Suspicious 
+None = Accept inbox
+Quarantine = SPAM
+Reject = Dont receive
+
+SMTP Port = 25
+SMTP Secure = 465
+
+Express have SMTP-Server Package instead of using http module
+
+SMTP is based on TCP
