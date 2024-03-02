@@ -51,4 +51,4 @@ SMTP Secure = 465
 
 Express have SMTP-Server Package instead of using http module
 
-SMTP is based on TCP
+SMTP is based on TCP and Need AWS instance
